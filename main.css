@@ -1,0 +1,52 @@
+/* Definição de variáveis */
+:root {
+    --bg-light: #ffffff; /* Fundo claro */
+    --font-light: #000000; /* Texto claro */
+    --bg-dark: #121212; /* Fundo escuro */
+    --font-dark: #ffffff; /* Texto escuro */
+    --btn-bg-light: #ffffff; /* Cor do botão no tema claro */
+    --btn-font-light: #000000; /* Cor do texto do botão no tema claro */
+    --btn-bg-dark: #000000; /* Cor do botão no tema escuro */
+    --btn-font-dark: #ffffff; /* Cor do texto do botão no tema escuro */
+}
+
+/* Tema claro */
+.light-theme {
+    background: var(--bg-light);
+    color: var(--font-light);
+}
+
+/* Tema escuro */
+.dark-theme {
+    background: var(--bg-dark);
+    color: var(--font-dark);
+}
+
+/* Estilo geral do body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo do botão */
+.btn {
+    background-color: var(--btn-bg-dark);
+    color: var(--btn-font-dark);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Alteração do botão no tema claro */
+.light-theme .btn {
+    background-color: var(--btn-bg-light);
+    color: var(--btn-font-light);
+}
+
+/* Remover o outline ao clicar no botão */
+.btn:focus {
+    outline: none;
+}
